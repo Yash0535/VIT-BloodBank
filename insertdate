@@ -1,0 +1,25 @@
+<?php
+$mysqli = new mysqli('localhost','root','','bloodbank');
+$insertdate = date("d-m-Y", strtotime('11-04-1995'));
+$insert = $mysqli->prepare("INSERT into date (  data
+                                
+                                            )
+                                VALUES ($insertdate)");
+
+        $phpArray = json_decode($serialize_data, true);
+        foreach ($phpArray as $key => $value)
+        { 
+            if($value['rate']!=''&& $value['drop']!='')
+            {       
+            $insert->bind_param('sssssss',
+                                 $value['id'], 
+                                 $depot_details_id, 
+                                 $value['drop'], 
+                                 $value['rate'],
+                                 $currency,
+                                 $insertdate, 
+                                 $location);                                            
+            $insert->execute();
+            }
+        }
+?>

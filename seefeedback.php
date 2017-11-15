@@ -1,0 +1,137 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+ <head>
+  <title>VIT Blood Bank - Donate blood & save a life in time!</title> 
+  <meta Name=" " Content="Every 2 seconds, someone needs blood in India. When you donate blood, you save a life in time. Be a donor on BharatBloodbank.com. Register today!">
+  <script type='text/javascript' src='donors.js'></script>
+  <link rel="stylesheet" href="bbb-styles.css">
+ </head>
+ <body>
+  
+ <div class="left" ><ul id="menu" ><li ><a href="Registerfree.html">Register Free</a></li><li ><a href="Whydonotblood.html">Why Donate Blood?</a></li><li ><a href="Whoneedsblood.html">Who Needs Blood?</a></li><li ><li ><a href="Contactus.html">Contact Us</a></li><li ><a href="Recipientlogin.html">Recipient Login</a></li><li ><a href="Employeelogin.html">Employee Login</a></li></ul></div><br clear="all"><div style="height:8px"></div>
+<div class="left" style="width:563px;">
+	<div class="left"></div><div class="clear"></div>
+	<div class="left" style="width:561px;border:1px solid #D7D7D7;border-top:0px;border-bottom:0px;">
+		<div class="left" style="width:561px;">
+			<div style="background: url(images/div-spheadbg-crv.gif) no-repeat; width:561px; height:50px;"><p style="padding-top:10px;padding-left:15px;"><font class="headtxt">Feedbacks</font></p></div>
+			<div class="left" style="width:10px;"></div>
+			
+			<div class="left" style="width:541px;">
+		
+					<div style="padding:20px;">
+
+					<?php
+    
+							$host="localhost"; // Host name 
+							$username="root"; // Mysql username 
+							$password=""; // Mysql password 
+							$db_name="bloodbank"; // Database name 
+							$tbl_name="feedback";
+							mysql_connect("$host", "$username", "$password")or die("cannot connect"); 
+							mysql_select_db("$db_name")or die("cannot select DB");
+							$sql="SELECT Name,Email_ID,feedback FROM $tbl_name" ;
+							$result=mysql_query($sql);
+							while($row=mysql_fetch_array($result)){
+
+                			echo "<div align='left' class='boldtxt' style='padding:18px 0px 10px 0px;'>".$row['Name']."</div><div>".$row['feedback']."</div><div align='right' class='boldtxt' style='padding:18px 0px 10px 0px;'>".$row['Email_ID']."</div><div class='dotline'><img src='trans.gif' width='1' height='1' border='0' alt=''></div><br/>";
+                			}
+			?>
+								
+					<!-- <p>We at BharatBloodBank.com would like to hear your experiences. Tell us what you think of this service, is it useful, how did you go about finding donors, would others too benefit from a service like this and so on. We are sure your experiences will be a guiding spirit to our future endeavors.</p> -->
+					
+
+					
+					<!-- <br>
+					<form name="share" method="POST" action="share-experience.php" onSubmit="return shareexp();" style="margin:0px;">
+						<div class="left" style="width:200px;padding-bottom:10px;">Name :</div><div class="left"><input type="text" name="name" class="textbox"></div><br clear="all">
+						<div class="left" style="width:200px;padding-bottom:10px;">E-mail id :</div><div class="left"><input type="text" name="email" class="textbox"></div><br clear="all">
+						<div class="left" style="width:200px;">Your experience :</div><div class="left"><textarea cols="50" rows="3" name="experience" class="textbox"></textarea></div><br clear="all">
+						<div class="left" style="padding: 10px 0px 0px 200px;"><input type="hidden" name="send" value="1"><input type="image" src="images/submit-button.gif" name="submit" value="Submit"></div>
+
+					</form> -->
+					   	
+					</div>
+			</div>
+			
+			<div class="left" style="width:10px;"></div>
+		</div>
+	</div>
+	<div class="clear"></div>
+	<div class="left"></div><div class="clear"></div>
+</div>
+
+ <!--{ Right Panel -->
+<div class="left" style="width:8px;"></div>
+ <div class="left">
+ <form name="sfrm"  method="post" style="margin:0px;" action="newsearchresults.php" onsubmit="return iFormCheck();">
+	<div style="background: url(images/right-panel-bg-top.jpg) no-repeat top right; width:200px;">
+		<div style="background: url(images/right-panel-bg-bottom.gif) no-repeat bottom right; width:200px;">
+			<div style="padding: 10px 15px 0px 15px">			
+				<font class="headtxt">Find a Donor</font>
+				
+				<div   style="padding-top:10px;"><B>City :</B><br>
+				<div id="city2">
+				<select name="city2" id="city2"  style="width:165px;" class="textbox">
+				<!-- onchange="return FormTown();" -->
+					<option value="" selected> --- Select City ---</option>
+					<option value="Chennai" > Chennai			
+									</select></div></div>
+
+				<div   style="padding-top:10px;"><B>Area :</B><br>
+				<div id="area2">
+				<select   id="town2" NAME="town2"  style="width:165px;" class="textbox">
+					<option value="" selected> --- Select Area ---</option>
+					<option value="Mambakkam" > Mambakkam		<option value="Kandigai" > Kandigai	     <option value="Kelambakkam" > Kelambakkam	     <option value="Chrompet" >     Chrompet	    <option value="Moolacheri" > Moolacheri         <option value="Tambaram" > Tambaram	     <option value="Kovalam" > 	Kovalam		<option value="Thiruvidanhai" > Thiruvidanhai		 	
+							                 <option value="6483" > 	                   				</select></div></div>
+
+				<div style="padding-top:10px;"><B>Group :</B><br>
+				<select name="bloodgroup2" value="" style="width:165px;" class="textbox">
+					<option value="" selected> --- Select Group ---</option>
+							<option value="A1+" > A1+			<option value="A1-" > A1-			<option value="A2+" > A2+			<option value="A2-" > A2-			<option value="B+" > B+			<option value="B-" > B-			<option value="A1B+" > A1B+			<option value="A1B-" > A1B-			<option value="A2B+" > A2B+			<option value="A2B-" > A2B-			<option value="AB+" > AB+			<option value="AB-" > AB-			<option value="O+" > O+			<option value="O-" > O-			<option value="A+" > A+			<option value="A-" > A-					</select></div>
+
+				<div class="right" style="padding-top:10px;">
+				<input type="hidden" name="search">
+		
+				<input type="image" src="search-button.gif" width="55" height="21" border="0" alt=""  ></div><br clear="all"><br>
+			</div>
+		</div></form>
+	 </div>
+	   <div style="height:8px"></div>
+	 <div style="background: url(images/right-panel-bg-top.jpg) no-repeat top right; width:200px;">
+		<div style="background: url(images/right-panel-bg-bottom.gif) no-repeat bottom right; width:200px;">
+			<div style="padding: 10px 13px 0px 13px">
+				<div  style="padding: 10px 3px;border-bottom: 1px solid #fff;"><a href="Donorlogin.html" class="headtxt1">Donor Login</a></div>
+
+				<div  style="padding: 10px 3px;border-top: 1px solid #D2D2D2;border-bottom: 1px solid #fff;"><a href="Donorspeak.html" class="headtxt1">Donors' Speak</a></div>
+				
+				<div  style="padding: 10px 3px;border-top: 1px solid #D2D2D2;border-bottom: 1px solid #fff;"><a href="Bloodfacts.html" class="headtxt1">Blood Facts</a></div>
+
+				<div  style="padding: 10px 0px;border-top: 1px solid #D2D2D2;"><a href="Tipsonblooddonation.html" class="headtxt1">Tips on Blood Donation</a></div>
+
+				
+			</div><br clear="all">
+		</div>
+	 </div>
+	 <!-- <div style="height:8px"><img src="images/trans.gif" width="1" height="1" border="0" alt=""></div>
+	 <div style="background: url(images/right-panel-bg-top.jpg) no-repeat top right; width:200px;">
+		<div style="background: url(images/right-panel-bg-bottom.gif) no-repeat bottom right; width:200px;">
+			<div style="padding: 20px 20px 0px 20px">
+				<div style="background:#fff;width:160px;height:600px;">
+
+				</div>
+			</div><br clear="all">
+		</div>
+	 </div> -->
+	
+ </div>
+ <!-- Right Panel }-->
+<br clear="all"> <div style="height:8px"><img src="trans.gif" width="1" height="1" border="0" alt=""></div>
+
+  <div style="border-top: 1px solid #D8D8D8;border-bottom: 4px solid #B70407;text-align:center;">
+	 <div style="padding: 8px 0px;"><a href="aboutus.html" class="footerclr">About Us</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="feedback.html" class="footerclr">Feedback</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="FAQ.html" class="footerclr">FAQ</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="shareyourexpirence.html" class="footerclr">Share Your Experience</a></div>
+
+  </div>
+
+ </div>
+ </body>
+</html>

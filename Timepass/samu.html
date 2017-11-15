@@ -1,0 +1,286 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+ <head>
+  <title>BharatBloodBank.com - Save a life! Be a Donor & register your details!</title> 
+  <meta Name="Description" Content="BharatBloodBank.com is a social initiative of BharatMatrimony.com. Find 1000s of Blood Donors registered across India. Register today & save a life!">
+  <script type='text/javascript' src='script/donors.js'></script>
+  <link rel="stylesheet" href="styles/bbb-styles.css"> 
+ </head>
+ <body>
+ <div id="contain">
+	<div class="left" style="padding: 8px 0px;"><a href="http://www.bharatbloodbank.com/"><img src="images/bbb-logo.gif" width="195" height="80" border="0" alt=""></a></div>	
+	 	<form method="post" name="loginfrm" action="validate.php" onsubmit="return checkEntries(this);" style="margin:0px;">
+	<div class="right" style="padding: 57px 0px 0px 0px;">
+	<div style="padding: 0px 0px 0px 295px;"><a href="forgetpassword.php" class="linktxt smalltxt">Forgot Password?</a></div>
+
+	Donor Login <input type="text" name="user" class="textbox" value="">&nbsp;&nbsp; Password <input type="password" name="pass" class="textbox" value=""><input type="image" src="images/login-button.gif"  width="44" height="21" border="0" alt="" style="margin:-3px 0px 0px 10px;vertical-align:middle;"></div><br clear="all">
+	</form>
+  
+ <div class="left" ><ul id="menu" ><li class="first"></li><li id='selected'><a href="register.php">Register Free</a></li><li ><a href="whydonateblood.php">Why Donate Blood?</a></li><li ><a href="whoneedsblood.php">Who Needs Blood?</a></li><li ><a href="refer-friend.php">Refer a Friend</a></li><li ><a href="contactus.php">Contact Us</a></li><li ><a href="media-centre.php">Media Centre</a></li></ul></div><br clear="all"><div style="height:8px"><img src="images/trans.gif" width="1" height="1" border="0" alt=""></div>
+
+<!--# include header--->
+
+
+<!--<font class="blueheadtxt">Donor registration</font><br>-->
+	
+
+<div class="left" style="width:563px;">
+	<div class="left"><img src="images/div-sp-crv.gif" width="563" height="11"></div><div class="clear"></div>
+	<div class="left" style="width:561px;border:1px solid #D7D7D7;border-top:0px;border-bottom:0px;">
+		<div class="left" style="width:561px;">
+						<div style="background: url(images/div-spheadbg-crv.gif) no-repeat; width:561px; height:50px;"><p style="padding-top:10px;padding-left:10px;"><font class="headtxt">Donor Registration</font></p></div>
+
+				<div class="left" style="width:561px; background: url(images/div-sp-leftbg.gif) no-repeat top left;">
+			<div class="left" style="width:561px; background: url(images/div-sp-rightbg.gif) no-repeat top right;">
+			<div class="left" style="padding-left:20px;">
+				
+<div id="form">
+				<form name="newfrm" action="register.php" method="post" onsubmit="return Register();" style="margin:0px;">
+				<div align="right"  class="linktxt" >* Mark fields are mandatory</div>	
+				<div class="left" style="width:265px;">	
+					<div style="padding:10px;"><span><font class="boldtxt">Name<font class="formclr">*</font> :</font></span><br><input type="text" name="name" tabindex="1" value="" class="textbox" size="30" maxlength="40">
+					<input type="hidden" value="true" name="insert">
+		<input type="hidden" name="page" value="add"><br>
+					<input type="hidden" name="my_accounts_x" value="my_accounts_x" >
+					</div>
+					<div style="padding:10px;padding-top:18px;"><span><font class="boldtxt">Password<font class="formclr">*</font>:</font></span><br><input type="password" name="pwd" tabindex="3" value="" maxlength="20" class="textbox" size="30"><br><font class="frmcomments">Minimum 4 characters allowed</font></div>
+					<div style="padding:10px;padding-top:8px;"><span><font class="boldtxt">Date of Birth<font class="formclr">*</font>:</font><br><font class="frmcomments">(min: 18 yrs  max: 55 yrs)</font><br><select style="width:45px;" class="smalltxt textbox" NAME="ddob" size="1" tabindex="5">
+					<option value="">DD
+					<option value="1" >1					<option value="2" >2					<option value="3" >3					<option value="4" >4					<option value="5" >5					<option value="6" >6					<option value="7" >7					<option value="8" >8					<option value="9" >9					<option value="10" >10					<option value="11" >11					<option value="12" >12					<option value="13" >13					<option value="14" >14					<option value="15" >15					<option value="16" >16					<option value="17" >17					<option value="18" >18					<option value="19" >19					<option value="20" >20					<option value="21" >21					<option value="22" >22					<option value="23" >23					<option value="24" >24					<option value="25" >25					<option value="26" >26					<option value="27" >27					<option value="28" >28					<option value="29" >29					<option value="30" >30					<option value="31" >31				</select>
+						<select style="width:45px;" class="smalltxt textbox" NAME="mdob" size="1" tabindex="6">
+						<option value="">MM
+					<option value="1" >1					<option value="2" >2					<option value="3" >3					<option value="4" >4					<option value="5" >5					<option value="6" >6					<option value="7" >7					<option value="8" >8					<option value="9" >9					<option value="10" >10					<option value="11" >11					<option value="12" >12			</select>
+						<select style="width:65px;" class="smalltxt textbox" NAME="ydob" size="1" tabindex="7">
+						<option value="">YYYY
+					<option value="1950" >1950					<option value="1951" >1951					<option value="1952" >1952					<option value="1953" >1953					<option value="1954" >1954					<option value="1955" >1955					<option value="1956" >1956					<option value="1957" >1957					<option value="1958" >1958					<option value="1959" >1959					<option value="1960" >1960					<option value="1961" >1961					<option value="1962" >1962					<option value="1963" >1963					<option value="1964" >1964					<option value="1965" >1965					<option value="1966" >1966					<option value="1967" >1967					<option value="1968" >1968					<option value="1969" >1969					<option value="1970" >1970					<option value="1971" >1971					<option value="1972" >1972					<option value="1973" >1973					<option value="1974" >1974					<option value="1975" >1975					<option value="1976" >1976					<option value="1977" >1977					<option value="1978" >1978					<option value="1979" >1979					<option value="1980" >1980					<option value="1981" >1981					<option value="1982" >1982					<option value="1983" >1983					<option value="1984" >1984					<option value="1985" >1985					<option value="1986" >1986					<option value="1987" >1987					<option value="1988" >1988					<option value="1989" >1989					<option value="1990" >1990					<option value="1991" >1991					<option value="1992" >1992					<option value="1993" >1993					<option value="1994" >1994					<option value="1995" >1995					<option value="1996" >1996					<option value="1997" >1997					<option value="1998" >1998					<option value="1999" >1999					<option value="2000" >2000					<option value="2001" >2001					<option value="2002" >2002					<option value="2003" >2003					<option value="2004" >2004					<option value="2005" >2005					<option value="2006" >2006					<option value="2007" >2007					<option value="2008" >2008					<option value="2009" >2009					<option value="2010" >2010					<option value="2011" >2011					<option value="2012" >2012					<option value="2013" >2013					<option value="2014" >2014					<option value="2015" >2015					<option value="2016" >2016					<option value="2017" >2017								</option></select><br><font class="frmcomments">Date of birth will not be shown to others. It's only for calculating your age.</font>
+					</div>
+
+					<div style="padding:10px;padding-top:1px;"><span><font class="boldtxt">Blood Group<font class="formclr">*</font> </font></span><br>
+						<select style="width:100px;" tabindex="10" class="smalltxt textbox" name="bloodgroup" size="1" tabindex="20">
+							<option value="">Select
+			<option value="1" > A1+			<option value="2" > A1-			<option value="3" > A2+			<option value="4" > A2-			<option value="5" > B+			<option value="6" > B-			<option value="7" > A1B+			<option value="8" > A1B-			<option value="9" > A2B+			<option value="10" > A2B-			<option value="11" > AB+			<option value="12" > AB-			<option value="13" > O+			<option value="14" > O-			<option value="15" > A+			<option value="16" > A-							</select>
+					</div>
+				
+					<div class="left" style="padding:10px;"><div><font class="boldtxt">Contact Number :</font></div>
+						<div class="left" style="padding-bottom:10px;width:60px;">Mobile<font class="formclr">*</font>:</div><div class="left" style="padding-bottom:10px;"><input type="text" name="mobile" class="textbox" maxlength="10" value="" tabindex="12"></div><br clear="all">
+						<div class="left" style="padding-bottom:10px;width:60px;">Residence:</div><div class="left" style="padding-bottom:10px;"><input type="text" name="dayphone" class="textbox" maxlength="11" value="" tabindex="13"></div><br clear="all">
+						<div class="left" style="padding-bottom:10px;width:60px;">Office:</div><div class="left" style="padding-bottom:10px;"><input type="text" name="evephone" class="textbox" maxlength="11" value="" tabindex="14"></div><br clear="all">
+						<font class="frmcomments">Note: Please provide at least one contact number. But it is recommended to provide as many contact numbers as possible because it will be easier for the recipients to contact you in times of emergency. Remember a life may be depending on you!</font>
+					</div><br clear="all">
+					<div style="padding:10px;"><span><font class="boldtxt">SMS Alert :</font></span><INPUT TYPE="checkbox" NAME="chkSMS"    value="1"  tabindex="19"><br><font class="frmcomments">You will receive an alert on your mobile when there is a request for your blood type within your city.</font></div>
+					<div style="padding:10px;"><span><font class="boldtxt">State<font class="formclr">*</font>:</font></span><br>
+					<div id="state">
+						<select style="width:150px;" class="smalltxt textbox" id="state" NAME="state" size="1" tabindex="21" onchange="return selectlocation(document.newfrm.state.options[document.newfrm.state.selectedIndex].value ,'',1);">
+						<option value="">Select State
+			<option value="INAN" > Andaman Nicobar			<option value="INAP" > Andhra Pradesh			<option value="INAR" > Arunachal Pradesh			<option value="INAS" > Assam			<option value="INBI" > Bihar			<option value="INCH" > Chandigarh			<option value="INCT" > Chhattisgarh			<option value="INDA" > Dadra and Nagar Haveli			<option value="INDD" > Daman and Diu			<option value="INDL" > Delhi			<option value="INGO" > Goa			<option value="INGU" > Gujarat			<option value="INHA" > Haryana			<option value="INHP" > Himachal Pradesh			<option value="INJK" > Jammu and Kashmir			<option value="INJH" > Jharkhand			<option value="INKA" > Karnataka			<option value="INKR" > Kerala			<option value="INLA" > Lakshadweep			<option value="INMP" > Madhya Pradesh			<option value="INMH" > Maharashtra			<option value="INMA" > Manipur			<option value="INME" > Meghalaya			<option value="INMI" > Mizoram			<option value="INNA" > Nagaland			<option value="INOR" > Orissa			<option value="INPY" > Pondicherry			<option value="INPB" > Punjab			<option value="INRJ" > Rajasthan			<option value="INSI" > Sikkim			<option value="INTN" > Tamil Nadu			<option value="INTR" > Tripura			<option value="INUP" > Uttar Pradesh			<option value="INUT" > Uttaranchal			<option value="INWB" > West Bengal		</select></div>
+					</div>
+					<div style="padding:10px;"><span><font class="boldtxt">City<font class="formclr">*</font>:</font></span><br>
+					<div id="city">
+						<select style="width:150px;" class="smalltxt textbox" id="city" NAME="city" size="1" tabindex="22" onchange="OthersDisplay(this.value,1); return selectlocation(document.newfrm.state.options[document.newfrm.state.selectedIndex].value ,document.newfrm.city.options[document.newfrm.city.selectedIndex].value,1);" >
+							<option value="">Select City</option>
+														  <option value="9999"  >Others</option>
+						</select>
+					</div>
+					<div id="othercity" style=" display:none;   padding-top:9px;" > <input type="text" name="txtothercity" class="textbox" value="Specify the city" tabindex="23" onfocus="onfocusText(this, 'Specify the city');" onblur="onfocusText(this, 'Specify the city');"  style="width:150px" > </div>
+					</div>
+					<div style="padding:10px;"><span><font class="boldtxt">Area<font class="formclr">*</font>:</font><br>		
+					<div id="area">
+					<select style="width:200px;" class="smalltxt textbox" id="town" NAME="town" size="1" tabindex="24" onchange="OthersDisplay(this.value,2)">		
+						<option value="">Select Area</option>
+											   <option value="6483"  >Others</option>
+					</select></div>
+					<div id="otherarea" style=" display:none;  padding-top:5px;" > <input type="text" name="txtotherarea" class="textbox" tabindex="25" value="Specify the area" onfocus="onfocusText(this, 'Specify the area');" onblur="onfocusText(this, 'Specify the area');"  style="width:200px" > </div>
+					</div>
+					<div style="padding:10px;"><span><font class="boldtxt">How often have you donated blood in the past?</font></span><br>
+						<select style="width:100px;" class="smalltxt textbox" name="how_often" size="1" tabindex="26">
+							<option value="yet to donate" >Yet to donate</option>
+							<option value="regular donor" >Regular donor</option>
+							<option value="on need basis" >On need basis</option>
+						</select>
+					</div>
+					
+				</div>
+				<div class="left" style="width:255px;">	
+					<div style="padding:10px;"><span><font class="boldtxt">Username<font class="formclr">*</font>:</font></span><br><input type="text" name="username" tabindex="2" value="" class="textbox" size="30" maxlength="10"><br><font class="frmcomments">(min 6 characters) <a href="javascript:CheckUser()" class="linktxt" title="Check username availability" class="footerlink">Check Availability?</a></font></div>
+					<div style="padding:10px;padding-top:0px;"><span><font class="boldtxt">Confirm Password<font class="formclr">*</font>:</font></span><br><input type="password" name="pwd1" tabindex="4" maxlength="20" value="" class="textbox" size="30"><br><font class="frmcomments">Please re-enter your password</font></div>
+					<div style="padding:10px;padding-top:6px;"><span><font class="boldtxt">Gender<font class="formclr">*</font> :</font><br></span><input type="radio" name="gender" value="F" tabindex="8" >Female<br><input type="radio" name="gender" value="M" tabindex="9"  >Male</div>
+					<div style="padding:10px;padding-top:30px;"><span><font class="boldtxt">Weight<font class="formclr">*</font>:</font><br></span><input type="text" name="weight" size=5 maxlength="3" value="" tabindex="11" class="textbox"> Kgs<br><font class="frmcomments">(should be above 50 kg)</font></div>
+					
+					<div style="padding:0px 10px 10px 10px;"><span><font class="boldtxt">E-mail<font class="formclr">*</font>:</font><br></span><INPUT TYPE="text" size="25" maxlength="50" NAME="email" value="" tabindex="15" class="textbox"><br><font class="frmcomments">We recommend you enter the e-mail ID, which will help us get in touch with you in case you are not reachable by phone. It will be greater help if you could provide us your personal e-mail ID besides your corporate e-mail ID. You can always be reached to save a life!</font></div>
+					<!-- <div style="padding:10px;"><span><font class="boldtxt">Mail Alert :</font></span><INPUT TYPE="checkbox" NAME="chkMail"    value="1"  tabindex="16"></div> -->
+					
+					
+					<div style="padding:10px;"><span><font class="boldtxt">Date of last blood donation :</font></span><br>
+					
+					<input type="hidden" name="last_donate" value="">
+						<select style="width:45px;" class="smalltxt textbox" NAME="dlast" size="1" tabindex="16">
+						<option value="">DD
+					<option value="1" >1					<option value="2" >2					<option value="3" >3					<option value="4" >4					<option value="5" >5					<option value="6" >6					<option value="7" >7					<option value="8" >8					<option value="9" >9					<option value="10" >10					<option value="11" >11					<option value="12" >12					<option value="13" >13					<option value="14" >14					<option value="15" >15					<option value="16" >16					<option value="17" >17					<option value="18" >18					<option value="19" >19					<option value="20" >20					<option value="21" >21					<option value="22" >22					<option value="23" >23					<option value="24" >24					<option value="25" >25					<option value="26" >26					<option value="27" >27					<option value="28" >28					<option value="29" >29					<option value="30" >30					<option value="31" >31								</select>
+						<select style="width:45px;" class="smalltxt textbox" NAME="mlast" size="1" tabindex="17">
+						<option value="">MM
+					<option value="1" >1					<option value="2" >2					<option value="3" >3					<option value="4" >4					<option value="5" >5					<option value="6" >6					<option value="7" >7					<option value="8" >8					<option value="9" >9					<option value="10" >10					<option value="11" >11					<option value="12" >12								</select>
+						<select style="width:55px;" class="smalltxt textbox" NAME="ylast" size="1" tabindex="18">
+						<option value="">YYYY
+					<option value="2017" >2017					<option value="2016" >2016					<option value="2015" >2015					<option value="2014" >2014					<option value="2013" >2013					<option value="2012" >2012					<option value="2011" >2011					<option value="2010" >2010					<option value="2009" >2009					<option value="2008" >2008					<option value="2007" >2007					<option value="2006" >2006					<option value="2005" >2005					<option value="2004" >2004					<option value="2003" >2003					<option value="2002" >2002					<option value="2001" >2001					<option value="2000" >2000					<option value="1999" >1999					<option value="1998" >1998					<option value="1997" >1997					<option value="1996" >1996					<option value="1995" >1995					<option value="1994" >1994					<option value="1993" >1993					<option value="1992" >1992					<option value="1991" >1991					<option value="1990" >1990					<option value="1989" >1989					<option value="1988" >1988					<option value="1987" >1987					<option value="1986" >1986					<option value="1985" >1985					<option value="1984" >1984					<option value="1983" >1983					<option value="1982" >1982					<option value="1981" >1981					<option value="1980" >1980					<option value="1979" >1979					<option value="1978" >1978					<option value="1977" >1977					<option value="1976" >1976					<option value="1975" >1975					<option value="1974" >1974					<option value="1973" >1973					<option value="1972" >1972					<option value="1971" >1971					<option value="1970" >1970					<option value="1969" >1969					<option value="1968" >1968					<option value="1967" >1967					<option value="1966" >1966					<option value="1965" >1965					<option value="1964" >1964					<option value="1963" >1963					<option value="1962" >1962					<option value="1961" >1961					<option value="1960" >1960					<option value="1959" >1959					<option value="1958" >1958					<option value="1957" >1957					<option value="1956" >1956					<option value="1955" >1955					<option value="1954" >1954					<option value="1953" >1953					<option value="1952" >1952					<option value="1951" >1951					<option value="1950" >1950								</select><br><font class="frmcomments">(optional)</font>
+					</div>
+
+					<div style="padding:0px 10px 10px 10px;"><span><font class="boldtxt">Hide Mobile Number<font class="formclr"></font>:</font></span><INPUT TYPE="checkbox" NAME="chkHideMobile" value="1"  tabindex="20"></div>
+
+					<!-- <div style="padding:10px;"><font class="boldtxt">Personal Message</font><br><font class="smalltxt">(Message from donor)</font> :<br><textarea rows=3 cols=30 name="about_me" tabindex="24"  class="textbox"></textarea></div> -->
+				</div>
+				</div>
+			</div>
+			</div></div>
+		</div>
+	</div>
+	<div class="clear"></div>
+	<div><img src="images/div-sp-crv-formsep.gif" width="564" height="16"></div>
+	<div class="left" style="width:561px;border:1px solid #D7D7D7;border-top:0px;border-bottom:0px;">
+		<div class="left" style="width:561px;">
+				<div style="background: url(images/div-spheadbg-crv.gif);"><p style="padding-top:5px;padding-left:10px;"><font class="subheadtxt">Please check your eligibility to donate blood</font></p></div>
+					<div class="left" style="width:10px;"><img src="images/div-sp-leftbg.gif" width="10" height="363"></div>
+						<div class="left" style="width:541px;">
+						<ul style="padding-top:30px;padding-left:30px;">
+							<li style="padding-left:20px;padding-bottom:10px;background-image: url('images/frm-tick-icon.gif');background-repeat:no-repeat;">My hemoglobin is not less than 12.5 grams</li>
+							<li style="padding-left:20px;padding-bottom:10px;background-image: url('images/frm-tick-icon.gif');background-repeat:no-repeat;">I am free from acute respiratory diseases and skin diseases</li>
+							<li style="padding-left:20px;padding-bottom:10px;background-image: url('images/frm-tick-icon.gif');background-repeat:no-repeat;">I do not carry any disease transmissible by blood transfusion</li>
+							<li style="padding-left:20px;padding-bottom:10px;background-image: url('images/frm-tick-icon.gif');background-repeat:no-repeat;">I am not under medication for Malaria / Tuberculosis / Diabetes / Fits / Convulsions</li>
+						</ul>
+
+												<ul style="padding-top:10px;padding-left:30px;">
+						<font class="boldtxt">I have not suffered from <font color="#FF0000">#</font></font><br><br>
+							<li style="padding-bottom:10px;"><input type="checkbox" name="suffered1[]" value="1" tabindex="27" style="vertical-align:middle;" >&nbsp;Hepatitis B, C</li>
+							<li style="padding-bottom:10px;"><input type="checkbox" name="suffered1[]" value="2" tabindex="28" style="vertical-align:middle;" >&nbsp;AIDS</li>
+							<li style="padding-bottom:10px;"><input type="checkbox" name="suffered1[]" value="3" tabindex="29" style="vertical-align:middle;" >&nbsp;Cancer</li>
+							<li style="padding-bottom:10px;"><input type="checkbox" name="suffered1[]" value="4" tabindex="30" style="vertical-align:middle;" >&nbsp;Kidney disease</li>
+							<li style="padding-bottom:10px;"><input type="checkbox" name="suffered1[]" value="5" tabindex="31" style="vertical-align:middle;" >&nbsp;Heart disease</li>
+						</ul>
+
+						<div style="padding-left:30px;"><font color="#FF0000">#</font> <font class="frmcomments">Please consult your physician to check for eligibility.</font></div>
+						<div style="padding:10px;"><input type="checkbox" name="suffered" value="YES" checked tabindex="31">I have read the above eligibility criteria and confirm that I am eligible to donate blood.</div><br>
+						<center><input type="image" src="images/submit-button.gif" width="55" height="21"></center>
+
+						</div>
+					<div class="left" style="width:10px;"><img src="images/div-sp-rightbg.gif" width="10" height="363"></div>
+		</div>
+		<input type="hidden" name="delete1">
+		<input type="hidden" name="middle" value="0">
+		</form><br>
+	</div>
+	<div><img src="images/div-sp-crv-bot.gif" width="563" height="9" border="0" alt=""></div>
+</div>
+
+ <!--{ Right Panel -->
+  <div class="left" style="width:8px;"><img src="images/trans.gif" width="1" height="1" border="0" alt=""></div>
+ <div class="left">
+ <form name="sfrm"  method="post" style="margin:0px;" action="newsearchresults.php" onsubmit="return iFormCheck();">
+	<div style="background: url(images/right-panel-bg-top.jpg) no-repeat top right; width:200px;">
+		<div style="background: url(images/right-panel-bg-bottom.gif) no-repeat bottom right; width:200px;">
+			<div style="padding: 10px 15px 0px 15px">			
+				<font class="headtxt">Find a Donor</font>
+
+				
+				<div   style="padding-top:10px;"><B>State :</B><br>
+				<div id="state2">
+				<select id="state2" NAME="state2"  style="width:165px;" class="textbox" onchange="return searchselectlocation(document.sfrm.state2.options[document.sfrm.state2.selectedIndex].value,'',2);">	
+					<option value="" selected> --- Select State ---</option>
+							<option value="INAN" > Andaman Nicobar			<option value="INAP" > Andhra Pradesh			<option value="INAR" > Arunachal Pradesh			<option value="INAS" > Assam			<option value="INBI" > Bihar			<option value="INCH" > Chandigarh			<option value="INCT" > Chhattisgarh			<option value="INDA" > Dadra and Nagar Haveli			<option value="INDD" > Daman and Diu			<option value="INDL" > Delhi			<option value="INGO" > Goa			<option value="INGU" > Gujarat			<option value="INHA" > Haryana			<option value="INHP" > Himachal Pradesh			<option value="INJK" > Jammu and Kashmir			<option value="INJH" > Jharkhand			<option value="INKA" > Karnataka			<option value="INKR" > Kerala			<option value="INLA" > Lakshadweep			<option value="INMP" > Madhya Pradesh			<option value="INMH" > Maharashtra			<option value="INMA" > Manipur			<option value="INME" > Meghalaya			<option value="INMI" > Mizoram			<option value="INNA" > Nagaland			<option value="INOR" > Orissa			<option value="INPY" > Pondicherry			<option value="INPB" > Punjab			<option value="INRJ" > Rajasthan			<option value="INSI" > Sikkim			<option value="INTN" > Tamil Nadu			<option value="INTR" > Tripura			<option value="INUP" > Uttar Pradesh			<option value="INUT" > Uttaranchal			<option value="INWB" > West Bengal					</select></div></div>
+
+				
+				<div   style="padding-top:10px;"><B>City :</B><br>
+				<div id="city2">
+				<select name="city2" id="city2"  style="width:165px;" class="textbox">
+				<!-- onchange="return FormTown();" -->
+					<option value="" selected> --- Select City ---</option>
+					<option value="0" selected> --- Any ---</option>
+									</select></div></div>
+
+				<div   style="padding-top:10px;"><B>Area :</B><br>
+				<div id="area2">
+				<select   id="town2" NAME="town2"  style="width:165px;" class="textbox">
+					<option value="" selected> --- Select Area ---</option>
+					<option value="0" selected> --- Any ---</option>
+							                 <option value="6483" > 	                   				</select></div></div>
+
+				<div style="padding-top:10px;"><B>Group :</B><br>
+				<select name="bloodgroup2" value="" style="width:165px;" class="textbox">
+					<option value="" selected> --- Select Group ---</option>
+							<option value="1" > A1+			<option value="2" > A1-			<option value="3" > A2+			<option value="4" > A2-			<option value="5" > B+			<option value="6" > B-			<option value="7" > A1B+			<option value="8" > A1B-			<option value="9" > A2B+			<option value="10" > A2B-			<option value="11" > AB+			<option value="12" > AB-			<option value="13" > O+			<option value="14" > O-			<option value="15" > A+			<option value="16" > A-					</select></div>
+
+				<div class="right" style="padding-top:10px;">
+				<input type="hidden" name="search">
+		
+				<input type="image" src="images/search-button.gif" width="55" height="21" border="0" alt=""  ></div><br clear="all"><br>
+			</div>
+		</div></form>
+	 </div>
+	  <div style="height:8px"><img src="images/trans.gif" width="1" height="1" border="0" alt=""></div>
+	 <div style="background: url(images/right-panel-bg-top.jpg) no-repeat top right; width:200px;">
+		<div style="background: url(images/right-panel-bg-bottom.gif) no-repeat bottom right; width:200px;">
+			<div style="padding: 10px 13px 0px 13px">
+				<div  style="padding: 10px 3px;border-bottom: 1px solid #fff;"><a href="detailshareexperience.php" class="headtxt1">Donors' Speak</a></div>
+
+				<div  style="padding: 10px 3px;border-top: 1px solid #D2D2D2;border-bottom: 1px solid #fff;"><a href="blood-facts.php" class="headtxt1">Blood Facts</a></div>
+
+				<div  style="padding: 10px 0px;border-top: 1px solid #D2D2D2;"><a href="tips-donating.php" class="headtxt1">Tips on Blood Donation</a></div>
+
+				
+			</div><br clear="all">
+		</div>
+	 </div>
+
+	 <div style="height:8px"><img src="images/trans.gif" width="1" height="1" border="0" alt=""></div>
+	 <div style="background: url(images/right-panel-bg-top.jpg) no-repeat top right; width:200px;">
+		<div style="background: url(images/right-panel-bg-bottom.gif) no-repeat bottom right; width:200px;">
+			<div style="padding: 20px 15px 0px 15px">
+				<font class="headtxt">Related Links</font><br clear="all">
+
+				<p class="bigtxt"><a href="http://www.indianblooddonors.com/" class="linktxt">www.indianblooddonors.com</a><br>
+				<!-- <a href="http://www.bloodgivers.com" class="linktxt" target="_blank">www.bloodgivers.com</a><br> -->
+				<a href="http://www.jeevan.org" class="linktxt" target="_blank">www.jeevan.org</a><br>
+				<a href="http://www.blooddonations.org" class="linktxt" target="_blank">www.blooddonations.org</a><br>
+				<a href="http://www.aabb.org" class="linktxt" target="_blank">www.aabb.org</a><br>
+				<a href="http://www.redcross.org" class="linktxt" target="_blank">www.redcross.org</a></p>
+
+				
+			</div><br clear="all">
+		</div>
+	 </div>
+
+	 <!-- <div style="height:8px"><img src="images/trans.gif" width="1" height="1" border="0" alt=""></div>
+	 <div style="background: url(images/right-panel-bg-top.jpg) no-repeat top right; width:200px;">
+		<div style="background: url(images/right-panel-bg-bottom.gif) no-repeat bottom right; width:200px;">
+			<div style="padding: 20px 20px 0px 20px">
+				<div style="background:#fff;width:160px;height:600px;">
+
+				</div>
+			</div><br clear="all">
+		</div>
+	 </div> -->
+	
+ </div>
+ <!-- Right Panel }-->
+<br clear="all">	
+</td>
+</tr></table>
+
+<!--# include footer--->
+
+ <div style="height:8px"><img src="images/trans.gif" width="1" height="1" border="0" alt=""></div>
+
+  <div style="border-top: 1px solid #D8D8D8;border-bottom: 4px solid #B70407;text-align:center;">
+	 <div style="padding: 8px 0px;"><a href="aboutus.php" class="footerclr">About Us</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="feedback.php" class="footerclr">Feedback</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="faq.php" class="footerclr">FAQ</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="privacy.php" class="footerclr">Privacy Policy</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="bloodbank.php" class="footerclr">Register Your Blood Bank</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="media-centre.php" class="footerclr">Media Centre</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="share-experience.php" class="footerclr">Share Your Experience</a></div>
+
+	 <div class="dotline"><img src="images/trans.gif" width="1" height="1" border="0" alt=""></div>
+
+	 <div style="padding: 8px 0px;"><b>Other Social Initiatives:</b> <a href="http://www.BharatEyeBank.org" class="footerclr" target="_blank">BharatEyeBank.org</a></div>	 
+
+	 <div class="dotline"><img src="images/trans.gif" width="1" height="1" border="0" alt=""></div>
+
+	 <div style="padding: 8px 0px;">Copyright &copy; BharatBloodBank.com. 2015. All rights reserved.</div>
+  </div>
+
+ </div>
+ </body>
+</html>
